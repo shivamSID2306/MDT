@@ -1,1 +1,336 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import url("https://fonts.googleapis.com/css2?family=Livvic:wght@200;300;400;500;600;700;900&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Livvic", sans-serif !important;
+}
+
+
+/* @media all and (max-width: 992px) {
+  .nav-menu {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .navbar-brand {
+    padding: 0;
+  }
+
+  .navbar-nav {
+    height: auto !important;
+  }
+  .navbar-nav li {
+    display: flex;
+  }
+  .navbar-nav li a {
+    padding: 0;
+    margin: 0 0.5rem;
+  } */
+/* .nav-menu button .navbar-toggler {
+    margin-left: auto;
+    background: #fff;
+    border: none;
+  }
+
+  .nav-menu .navbar-toggler:focus {
+    outline: none;
+    border: none;
+  }
+  .nav-menu ul li a {
+    font-size: 18px;
+    padding: 10px 15px !important;
+    transition: all 0.3s;
+  }
+  .nav-menu ul li a:hover {
+    background-color: #5cc42e !important;
+    color: #fff !important;
+  } */
+
+@media all and (max-width: 1200px) {
+  .we-are-best-wrapper,
+  .contact-wrapper {
+    padding: 60px 15px;
+  }
+  .we-are-best-wrapper .inner-box {
+    max-width: 32%;
+  }
+
+  .counter-section .counter-inner {
+    margin: 60px 0;
+  }
+
+  .footer-wrapper a {
+    word-break: break-all;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  h3.main-title {
+    font-size: 32px;
+  }
+  h3.main-title br {
+    display: none;
+  }
+
+  .main-banner .row,
+  .main-banner {
+    padding: 0 15px;
+  }
+  .main-banner {
+    border-radius: 0 0 0 100px;
+  }
+
+  .main-banner .banner-text h1 br,
+  .main-banner .banner-text p br {
+    display: none;
+  }
+  .main-banner .banner-text h1 {
+    font-size: 38px;
+    line-height: 55px;
+  }
+
+  .about-section {
+    padding: 60px 15px;
+  }
+  .about-section .about-img .img-fluid {
+    margin-right: 50px;
+  }
+  .about-section .col-lg-6 {
+    padding: 0;
+  }
+
+  .we-are-best-wrapper .inner-box {
+    box-shadow: 5px 8px 15px rgb(0 0 0 / 2%);
+    padding: 40px 20px 40px 20px;
+  }
+  .we-are-best-wrapper h4 + h3 {
+    padding-bottom: 30px !important;
+  }
+
+  .contact-wrapper .lets-talk {
+    padding: 30px 30px 10px 30px;
+  }
+
+  .footer-wrapper {
+    border-radius: 100px 0 0 0;
+    padding: 30px 0;
+  }
+  .footer-wrapper .footer-menu ul li {
+    padding: 0 15px;
+  }
+
+  /* testimonial */
+  .testi-user-img {
+    width: 50% !important;
+  }
+}
+
+@media all and (max-width: 992px) {
+  .nav-menu button.navbar-toggler {
+    margin-left: auto;
+    background: #fff;
+    border: none;
+  }
+  .nav-menu button.navbar-toggler:focus {
+    outline: none;
+    border: none;
+  }
+  .nav-menu ul li a {
+    font-size: 18px;
+    padding: 10px 15px !important;
+    transition: all 0.3s;
+  }
+  .nav-menu ul li a:hover {
+    background-color: #5cc42e !important;
+    color: #fff !important;
+  }
+
+  .main-banner {
+    margin-top: 100px;
+    min-height: 1000px;
+  }
+  .main-banner .banner-text {
+    flex: unset;
+    max-width: 100%;
+    padding-top: 50px;
+    text-align: center;
+  }
+  .main-banner .banner-img {
+    max-width: 55%;
+    flex: unset;
+  }
+  .main-banner .row {
+    flex-direction: column-reverse;
+  }
+
+  .we-are-best-wrapper .inner-box {
+    max-width: 49%;
+    flex: unset;
+    margin-bottom: 20px;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .main-banner {
+    min-height: 900px;
+  }
+
+  .about-section .row {
+    flex-direction: column-reverse;
+  }
+  .about-section .col-lg-6 {
+    max-width: 100%;
+    flex: unset;
+  }
+  .about-section .about-img {
+    max-width: 70%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+  }
+
+  .contact-wrapper .col-xs-12 {
+    padding: 0;
+    max-width: 100%;
+    flex: unset;
+  }
+  .contact-wrapper .lets-talk {
+    margin-bottom: 30px;
+  }
+
+  .footer-wrapper .footer-menu {
+    padding-top: 20px;
+  }
+  .footer-wrapper p,
+  .footer-wrapper a {
+    font-size: 18px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .main-banner {
+  }
+  .counter-section .inner-counter .text-center {
+    padding-bottom: 25px;
+  }
+  .counter-section .inner-counter .text-center:last-child {
+    padding-bottom: 0px;
+  }
+
+  .footer-wrapper .footer-common {
+    padding-bottom: 15px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .main-banner {
+    border-radius: 0 0 0 50px;
+  }
+  .main-banner .banner-img {
+    max-width: 75%;
+  }
+  .main-banner .banner-text {
+    padding-right: 0;
+  }
+  .main-banner,
+  .main-banner .row {
+    min-height: 900px;
+    height: 900px;
+  }
+  .main-banner .banner-text h1 {
+    font-size: 35px;
+  }
+  .main-banner .row {
+    padding: 0;
+  }
+
+  .about-section .about-img {
+    max-width: 100% !important;
+  }
+
+  .we-are-best-wrapper {
+    padding: 50px 15px;
+  }
+  .we-are-best-wrapper .inner-box {
+    max-width: 100%;
+  }
+
+  .counter-section .counter-inner h3 {
+    font-size: 32px;
+  }
+  .contact-wrapper .contact-form {
+    padding-left: 0;
+  }
+  .contact-wrapper .contact-form .row {
+    display: unset;
+  }
+  .contact-wrapper .contact-form .col {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .footer-wrapper .footer-menu ul {
+    display: unset;
+  }
+  .footer-wrapper .footer-menu ul li {
+    padding: 10px 0;
+  }
+  .footer-wrapper .copyright {
+    font-size: 16px;
+  }
+  .footer-wrapper .social-media ul li a {
+    line-height: 49px;
+  }
+
+  /*  Testimonial  */
+  .gallery-thumbs .swiper-slide {
+    width: 220px !important;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .main-banner .banner-text h3 {
+    font-size: 20px;
+  }
+  .main-banner .banner-img {
+    max-width: 90%;
+  }
+  .main-banner .banner-text h1 {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  .we-are-best-wrapper .inner-box:hover .hover-box {
+    padding: 40px 15px 40px 15px;
+  }
+
+  .about-section .about-img {
+    max-width: 90%;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .portfolio-wrapper .boxes {
+    max-width: 50%;
+    flex: 50%;
+    padding: 10px 8px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  figure.snip0016:hover figcaption h2,
+  figure.snip0016:hover figcaption p {
+    width: 100%;
+  }
+  .portfolio-wrapper .boxes {
+    max-width: 100%;
+    flex: 100%;
+  }
+}

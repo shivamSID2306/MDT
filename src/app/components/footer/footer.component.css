@@ -1,0 +1,108 @@
+.footer-wrapper {
+  background: #1a2e35;
+  padding: 50px 0;
+  color: #fff;
+  border-radius: 150px 0 0 0;
+}
+.footer-wrapper .logo {
+  padding-bottom: 50px;
+}
+.footer-wrapper h4 {
+  color: #768286;
+  font-size: 18px;
+  letter-spacing: 0.3px;
+  line-height: 30px;
+}
+.footer-wrapper .footer-common i {
+  color: #5cc42e;
+  font-size: 40px;
+  padding: 15px 0;
+}
+.footer-wrapper p {
+  font-size: 20px;
+  letter-spacing: 0.3px;
+}
+.footer-wrapper a {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+}
+.footer-wrapper a:hover {
+  text-decoration: none;
+}
+
+.footer-wrapper .footer-menu {
+  width: 100%;
+  padding-top: 45px;
+}
+.footer-wrapper .footer-menu ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-wrapper .footer-menu ul li {
+  padding: 0 35px;
+}
+.footer-wrapper .footer-menu ul li a {
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+.footer-wrapper .footer-menu ul li a:hover,
+.footer-wrapper .footer-menu ul li a:active {
+  color: #84c341;
+}
+
+.footer-wrapper .copyright {
+  padding: 25px 0;
+  color: #768286;
+  font-size: 18px;
+  letter-spacing: 0.3px;
+  line-height: 30px;
+}
+
+.footer-wrapper .social-media ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.footer-wrapper .social-media ul li {
+  padding: 0 8px;
+}
+a {
+  text-decoration: none;
+}
+.footer-wrapper .social-media ul li a {
+  transition: all 0.3s;
+  background: #fff;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  color: #4064ac;
+  line-height: 45px;
+}
+.footer-wrapper .social-media ul li a:hover {
+  transform: scale(1.1);
+}
+.footer-wrapper .social-media ul li a i {
+  font-size: 22px;
+}
+.footer-wrapper .social-media ul li:nth-child(2) a {
+  color: #d9194b;
+}
+.footer-wrapper .social-media ul li:nth-child(3) a {
+  color: #1da1f2;
+}
+.footer-wrapper .social-media ul li:nth-child(4) a {
+  color: #f70000;
+}
+.footer-wrapper .social-media ul li:nth-child(5) a {
+  color: #0077b5;
+}

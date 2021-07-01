@@ -1,0 +1,86 @@
+<!-- Google Map -->
+<section class="container-fluid map-section px-0">  
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14873.794967171867!2d72.8586487!3d21.2536976!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8d4c7410e0bebef0!2sMountainsDriven%20Technologies!5e0!3m2!1sen!2sin!4v1620478439185!5m2!1sen!2sin" 
+        width="100%" height="450"  style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+</section>
+
+<!-- Contact Form -->
+<section class="contact-wrapper" id="contact">
+    <div style="width: 85%;" class="container ast-container">
+        <div class="row">
+            <div class="col-lg-5 col-md-5 col-xs-12 pl-0" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
+                <div class="lets-talk">
+                    <h5>Let's Talk</h5>
+                    <h3 class="main-title">Speak with Expert Members.</h3>
+                    <div class="inner-box">
+                        <div class="icon">
+                            <fa-icon [icon]="faEnvelope"></fa-icon>
+                        </div>
+                        <div class="heading">
+                            <h4>Email:</h4>
+                            <p><a href="mailto:mountainsdriventechnologies@gmail.com">mountainsdriventechnologies@gmail.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="inner-box">
+                        <div class="icon">
+                            <fa-icon [icon]="faPhone"></fa-icon>
+                        </div>
+                        <div class="heading">
+                            <h4>Phone:</h4>
+                            <p><a href="tel:8401413132">+91 84014 13132</a></p>
+                        </div>
+                    </div>
+
+                    <div class="inner-box">
+                        <div class="icon">
+                            <fa-icon [icon]="faMap"></fa-icon>
+                        </div>
+                        <div class="heading">
+                            <h4>Address:</h4>
+                            <p><a>A-163, GRUHAM ICON, OPPOSITE KOSAD LAKE GARDEN, 
+                                KOSAD, AMROLI, SURAT, GJ, INDIA
+                            </a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+   
+            <div class="col-lg-7 col-md-7 col-xs-12 pr-0" data-aos="fade-up"data-aos-anchor-placement="center-bottom" data-aos-duration="1500">
+                <div class="contact-form">
+                    <h4 class="sub-title">LET'S TALK</h4>
+                    <h3 [ngClass]="{'light-text': isActive}" class="main-title">Fill The Form</h3>
+                    <form name="contactus" id="contactus" method="post">
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" id="Name" name="Name" class="form-control" placeholder="Name">
+                            </div>
+                            <div class="col">
+                                <input type="email" id="Email" name="Email" class="form-control" placeholder="Email">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" id="Phone" name="Phone" class="form-control" placeholder="Phone Number(i.e. +x xxx xxx xxxx)" maxlength="15" onkeypress="return isNumberKey(this)">
+                            </div>
+                            <div class="col">
+                                <input type="text" id="Website" name="Website" class="form-control" placeholder="Website">
+                            </div>
+                        </div>
+
+                        <div class="row area">
+                            <div class="col">
+                                <textarea type="text" id="Message" name="Message" class="form-control" placeholder="Message"></textarea>
+                            </div>
+                        </div>
+
+                        <button [ngClass]="{'light-btn': isActive}" type="button" id="btnSubmit" class="theme-btn"><span>Contact us</span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

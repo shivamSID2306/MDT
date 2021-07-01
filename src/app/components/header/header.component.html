@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-lg navbar-light container-fluid nav-menu"  [ngClass]="{'bg-dark': isActive}">
+  <div class="ast-container">
+    <div class="row">
+      <a class="navbar-brand d-flex justify-content-center">
+        <img *ngIf="!isActive" src="assets/images/logo.png" alt="">
+        <img *ngIf="isActive" height="85.59px" width="150px" src="assets/images/footer_logo.png" alt="">
+
+        <div class="collapse navbar-collapse" [collapse]="isCollapsed" [isAnimated]="true" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item" (click)="activeItem('home')" [ngClass]="themeColor('home')"> <!--"{'bright': isActive === false && currentPage === 'home'}"-->
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item" (click)="activeItem('services')" [ngClass]="themeColor('services')">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item" (click)="activeItem('aboutUs')" [ngClass]="themeColor('aboutUs')">
+              <a class="nav-link" href="#about">About Us</a>
+            </li>
+            <li class="nav-item" (click)="activeItem('portfolio')" [ngClass]="themeColor('portfolio')">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item" (click)="activeItem('testimonial')" [ngClass]="themeColor('testimonial')">
+              <a class="nav-link" href="#testimonial">Testimonial</a>
+            </li>
+            <li class="nav-item" (click)="activeItem('contactUs')" [ngClass]="themeColor('contactUs')">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+            <li class="nav-item" id="toggle" tooltip="Click here to change Theme" placement="auto">
+              <a (click)="changeTheme()" [ngClass]="{'activated': isActive}" class="nav-link"><i class="indicator"></i></a>
+            </li>
+          </ul>
+        </div> 
+
+        <button class="navbar-toggler"
+            (click)="isCollapsed = !isCollapsed"
+            [attr.aria-expanded]="!isCollapsed"
+            [ngClass]="{'tp': isActive}" type="button" 
+            aria-controls="navbarNav">
+            <span class="navbar-toggler-icon" [ngClass]="{'text': isActive}"></span>
+        </button>
+      </a>
+    </div>
+  </div>
+</nav>
