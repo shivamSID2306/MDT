@@ -8,7 +8,7 @@ import { Component, OnInit, HostListener } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(public themeService: ThemeServiceService) { }
+  constructor(public themeService: ThemeServiceService) {}
 
   service: boolean;
   isActive: boolean = false;
